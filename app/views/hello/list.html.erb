@@ -1,0 +1,21 @@
+<table>
+ <!-- 各レコードのタイトル -->
+  <tr>
+    <th>ISBNコード</th><th>書名</th><th>価格</th>
+    <th>出版社</th><th>刊行日</th><th>ダウンロード</th>
+  </tr>
+
+<!--
+ コントローラーで取得したインスタンス変数からデータをbookに渡してタイトルごとに値を表示
+ eachメソッドでオブジェクト配列の内容を順に取り出している -->
+<% @books.each do |book| %>
+  <tr>
+    <td><%= book.isbn %></td>
+    <td><%= book.title %></td>
+    <td><%= book.price %></td>
+    <td><%= book.publish %></td>
+    <td><%= book.published %></td>
+    <td><%= book.dl %></td>
+  </tr>
+<% end %>
+</table>
