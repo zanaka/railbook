@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'hello/index', to: 'hello#index'
   # 両者が一致している場合は，toオプションを省略できる
   get 'hello/view'
+  get 'hello/list'
 end
