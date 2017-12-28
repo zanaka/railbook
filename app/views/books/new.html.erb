@@ -1,5 +1,7 @@
 <h1>New Book</h1>
 
+<!-- renderメソッドで部分テンプレート(form)を使う
+部分テンプレートを呼び出す際に，bookという変数に@bookを渡す -->
 <%= render 'form', book: @book %>
 
 <%= link_to 'Back', books_path %>

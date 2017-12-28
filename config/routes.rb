@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :fan_comments
+  resources :reviews
+  resources :authors
+  resources :users
   # resourcesメソッドによってbooksのリソースに対する標準的な操作がまとめて定義可能
   resources :books
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

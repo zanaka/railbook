@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  # before_actionメソッドは，アクションメソッド前に実行すべきメソッドを指定(フィルター)
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   # GET /books
@@ -64,6 +65,9 @@ class BooksController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_book
+      # paramsメソッドはURL経由で渡されたパラメーターを取得する
+      # idパラメーターでbooksテーブルを検索するのがfindメソッド=>id対応のBookオブジェクトに返す
+      # findメソッドで得られた結果はテンプレート側(view)で参照できるように変数に格納
       @book = Book.find(params[:id])
     end
 
