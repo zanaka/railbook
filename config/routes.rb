@@ -10,4 +10,9 @@ Rails.application.routes.draw do
   # 両者が一致している場合は，toオプションを省略できる
   get 'hello/view'
   get 'hello/list'
+
+  # アクションメソッドが存在しない場合には，テンプレートファイルを直接みにいく
+  # from_tagでは現在のアクション以外にもポスト先のアクションのルートを定義
+  get 'view/keyword'
+  post 'keyword/search'
 end
