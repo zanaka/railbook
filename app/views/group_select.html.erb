@@ -1,0 +1,4 @@
+<%= form_for(@review) do |f| %>
+  レビュー対象書籍：
+  <%= g.group_collection_select :book_id, @authors, :books, :id, :title %>
+<% end %>
