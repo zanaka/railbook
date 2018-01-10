@@ -12,3 +12,8 @@ def col_select
   #選択オプションの情報を取得
   @books = Book.select(:publish).distinct
 end
+
+def group_select
+  @review = Review.new
+  @authors = Author.all
+end
