@@ -17,3 +17,7 @@ def group_select
   @review = Review.new
   @authors = Author.all
 end
+
+def data_select
+  @book = Book.find(1)
+end
