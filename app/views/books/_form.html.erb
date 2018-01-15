@@ -41,6 +41,11 @@
     <%= form.check_box :dl, id: :book_dl %>
   </div>
 
+  <div class="field">
+    <%= form.label :isbn,  'ISBNコード' %>
+    <%= form.text_field :isbn %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
