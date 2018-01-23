@@ -8,3 +8,8 @@
     <%= image_tag 'expensive.gif' %>
   <% end %>
 </td>
+<td><%= book.price %>円
+  <% if book.price >= 3000 %>
+    <%= image_tag 'expensive.gif' %>
+  <% end %>
+</td>
