@@ -12,4 +12,8 @@ class HelloController < ApplicationController
     # @booksにはBookオブジェクトの配列が渡される
     @books = Book.all
   end
+
+  def destroy
+    @books = User.desyroy
+  end
 end
